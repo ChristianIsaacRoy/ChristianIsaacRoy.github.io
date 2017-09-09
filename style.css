@@ -1,0 +1,161 @@
+h1 {
+    font-size: 80px;
+}
+
+h3 {
+    font-size: 25px;
+    display: inline;
+}
+
+body {
+    background-color: lightgrey;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.grid-header {
+    display: flex;
+    justify-content: space-between;
+    grid-area: header;
+    font-family: 'Roboto', sans-serif;
+    background-color: lightslategray;    
+    color: white;
+}
+
+.name {
+    margin-left: 12%;
+}
+
+.links {
+    margin-right: 10%;
+    padding-top: 25px;
+}
+.links a {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.grid-header h1 {
+    display: inline;
+}
+
+.about {
+    grid-area: about;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.about img {
+    float: left;
+}
+
+.about p {
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.grid-foot {
+    grid-area: footer;
+    background-color: lightslategray;
+}
+
+.grid-main {
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: 10% 20% 20% 20% 20% 10%;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto 100px;
+    grid-template-areas: 
+        "header header header header header header"
+        ". . about about . ."
+        ". projects projects projects projects ."
+        ". proj1 proj1 proj2 proj2 ."
+        ". proj3 proj3 proj4 proj4 ."
+        ". xp xp xp xp ."
+        ". xp1pic xp1 xp1 xp1 ."
+        ". xp2 xp2 xp2 . ."
+        ". xp3pic xp3 xp3 xp3 ."
+        "footer footer footer footer footer footer";
+}
+
+.grid-projects {
+    grid-area: projects;
+    background-color: lightslategray;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid-xp {
+    grid-area: xp;
+    background-color: lightslategray;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;    
+    color: white;
+    font-size: 40px;
+    display: inline;
+}
+
+.proj-gif {
+    margin: auto;
+    width: 98%;
+    height: 400px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.project1 {
+    grid-area: proj1;
+}
+.project2 {
+    grid-area: proj2;
+}
+.project3 {
+    grid-area: proj3;
+}
+.project4 {
+    grid-area: proj4;
+}
+
+.xp1 { 
+    grid-area: xp1; 
+    align-self: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.xp1pic { 
+    grid-area: xp1pic;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.xp3pic { 
+    grid-area: xp3pic;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.xp3pic img {
+    border-radius: 8px;
+}
+
+.xp2 {
+    grid-area: xp2;
+    align-self: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.xp3 {
+    grid-area: xp3;
+    align-self: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
