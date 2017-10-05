@@ -2,9 +2,23 @@ h1 {
     font-size: 80px;
 }
 
-h3 {
-    font-size: 25px;
+h2 {
+    font-family: 'Roboto', sans-serif;    
+    color: white;
+    font-size: 40px;
     display: inline;
+}
+
+h3 {
+    font-size: 32px;
+    display: inline;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: auto;
 }
 
 body {
@@ -19,7 +33,7 @@ body {
     justify-content: space-between;
     grid-area: header;
     font-family: 'Roboto', sans-serif;
-    background-color: tomato;    
+    background-color: #D20908;    
     color: white;
 }
 
@@ -40,74 +54,69 @@ body {
     display: inline;
 }
 
-.about {
-    grid-area: about;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 10%;
-    padding-right: 10%;
+.about-img {
+    grid-area: about-img;
+    background-color: #FEB0A5;
+    align-self: stretch; 
 }
 
-.about img {
-    display: inline-block;
-    float: left;
-    padding-left: 50px;
-    padding-right: 50px;
+.about-img img {
+    padding-top: 12.5%;
+    display: block;
+    margin: auto;
+    width: 75%;
 }
 
-.about span {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
+.about-txt {
+    grid-area: about-txt;
+    background-color: #B7D2E9;
 }
 
-.about p {
-    padding-right: 25px;
-    padding-left: 25px;
-    font-size: 24px;
+.about-txt p {
+    padding-top: 20%;
+    display: block;
+    margin: auto;
+    width: 75%;
+
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #D20908;
 }
 
 .grid-foot {
     grid-area: footer;
-    background-color: tomato;
+    background-color: #D20908;
 }
 
 .grid-main {
     display: grid;
     align-items: stretch;
-    grid-template-columns: 10% 20% 20% 20% 20% 10%;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto 100px;
+    grid-template-columns: 10% 10% 10% 20% 20% 10% 10% 10%;
+    grid-template-rows: auto 700px auto auto auto auto auto auto auto 100px;
     grid-template-areas: 
-        "header header header header header header"
-        ". about about about about ."
-        ". projects projects projects projects ."
-        ". proj1 proj1 proj2 proj2 ."
-        ". proj3 proj3 proj4 proj4 ."
-        ". xp xp xp xp ."
-        ". xp1pic xp1 xp1 xp1 ."
-        ". xp2 xp2 xp2 . ."
-        ". xp3pic xp3 xp3 xp3 ."
-        "footer footer footer footer footer footer";
+        "header header header header header header header header"
+        ". about-img about-img about-img about-txt about-txt about-txt ."
+        ". projects projects projects projects projects projects ."
+        ". proj1 proj1 proj1 proj2 proj2 proj2 ."
+        ". proj3 proj3 proj3 proj4 proj4 proj4 ."
+        ". xp xp xp xp xp xp ."
+        ". xp1pic xp1pic xp1 xp1 xp1 xp1 ."
+        ". xp2 xp2 xp2 xp2 . . ."
+        ". xp3pic xp3pic xp3 xp3 xp3 xp3 ."
+        "footer footer footer footer footer footer footer footer";
 }
 
 .grid-projects {
     grid-area: projects;
-    background-color: tomato;
+    background-color: #D20908;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .grid-xp {
     grid-area: xp;
-    background-color: tomato;
+    background-color: #D20908;
     text-align: center;
-}
-
-h2 {
-    font-family: 'Roboto', sans-serif;    
-    color: white;
-    font-size: 40px;
-    display: inline;
 }
 
 .proj-gif {
@@ -119,17 +128,24 @@ h2 {
 }
 
 .project1 {
+    padding-top: 20px;
     grid-area: proj1;
-    background-color: lightgray;
+    background-color: #B7D2E9;
+    color: #D20908;
 }
 .project2 {
+    padding-top: 20px;
     grid-area: proj2;
+    background-color: #FEB0A5;
 }
 .project3 {
     grid-area: proj3;
+    background-color: #FEB0A5;
 }
 .project4 {
     grid-area: proj4;
+    background-color: #B7D2E9;
+    color: #D20908;
 }
 
 .xp1 { 
