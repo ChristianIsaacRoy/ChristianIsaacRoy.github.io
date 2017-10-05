@@ -1,25 +1,28 @@
 h1 {
     font-size: 80px;
-    color: white;
+    color: #545454;
     display: inline;
 }
 
 h2 {
-    font-family: 'Roboto', sans-serif;    
-    color: white;
-    font-size: 40px;
-}
-
-h3 {
     font-size: 32px;
     display: inline;
     font-weight: 700;
-    color: white;
+    color: #A9A9A9;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;    
+    margin: 0px;
+    color: #545454;
+    font-size: 32px;
 }
 
 h4 {
-    font-size: 32px;
-    font-weight: 700;
+    font-family: 'Roboto', sans-serif;    
+    margin: 0px;
+    color: #545454;
+    font-size: 24px;
 }
 
 p {
@@ -28,7 +31,7 @@ p {
 }
 
 body {
-    background-color: white;
+    background-color: #EFEFEF;
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
     padding: 0px;
@@ -39,7 +42,7 @@ body {
     justify-content: space-between;
     grid-area: header;
     font-family: 'Roboto', sans-serif;
-    background-color: #D20908;
+    background-color: #FBFBFD;
 }
 
 .name {
@@ -57,7 +60,7 @@ body {
 
 .about-img {
     grid-area: about-img;
-    background-color: #FFCB95;
+    background-color: #EFEFEF;
     align-self: stretch; 
 }
 
@@ -71,96 +74,168 @@ body {
 
 .about-txt {
     grid-area: about-txt;
-    background-color: #B7D2E9;
+    background-color: #EFEFEF;
     min-height: 700px;
 }
 
-.about-txt p {
-    padding-top: 22%;
-    padding-bottom: 22%;
+.disc {
     display: block;
-    margin: auto;
+    margin-top: 13%;
     width: 75%;
+    padding: 40px 60px;
+    text-align: justify;
 
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 150%;
-    color: #D20908;
+    background-color: rgba(202,235,242, .7);
+    color: #545454;
+}
+
+.disc2 {   
+    text-align: center;
+    width: 50%;
+    padding: 20px 0px;
+    display: table;
+    margin: 0 auto;
+    color: #545454;
+    background-color: rgba(202,235,242, .7);
+}
+
+.link {
+    margin-top: 30px;
+    margin-bottom: 10%;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 6px solid #FF3B3F;
+}
+
+.css-shapes-preview{ 
+    position: relative; 
+    height: 0px; 
+    width: 354px;  
+    bottom:0;
+    right:0;
+    transform: skew(149deg); 
+    -webkit-transform: skew(149deg); 
+    border-left: 60px solid transparent; 
+    border-right: 60px solid transparent; 
+    border-bottom: 100px solid #FF3B3F; 
+}
+
+.triangle-bottomright {
+    position: absolute;
+    bottom:0px;
+    right: 0px;
+	width: 30%;
+	height: 440px;
+	border-bottom: 60px solid #FF3B3F;
+	border-left: 100px solid transparent;
+}
+
+.proj-gif a {
+    font-size: 32px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #EFEFEF;
+}
+
+.proj-button {
+    position: absolute;
+    bottom: 10px;
+    right: 20px; 
+}
+
+.link a {
+    font-size: 48px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #FF3B3F;
 }
 
 .grid-foot {
     grid-area: footer;
-    background-color: #D20908;
+    color: #545454;
+    padding-top: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.grid-foot a {
+    color: #545454;
+    text-decoration: none;
 }
 
 .grid-main {
     display: grid;
     align-items: stretch;
-    grid-template-columns: 20% 10% 20% 20% 10% 20% ;
-    grid-template-rows: auto auto auto auto auto auto  auto auto 100px;
+    grid-template-columns: 10% 20% 20% 10% 10% 20% 10% ;
+    grid-template-rows: auto auto 40px auto auto 40px  auto auto 80px;
     grid-template-areas: 
-        "header header header header header header"
-        "about-img about-img about-img about-txt about-txt about-txt"
-        "projects projects projects projects projects projects"
-        "proj1 proj1 proj1 proj2 proj2 proj2"
-        "proj3 proj3 proj3 proj4 proj4 proj4"
-        "xp xp xp xp xp xp "
-        "xp1pic xp1pic xp1 xp2 xp2 ."
-        "xp3pic xp3pic xp3 xp3 xp3 xp3"
-        "footer footer footer footer footer footer";
+        " header    header    header    header    header    header    header"
+        "about-img about-img about-img about-txt about-txt about-txt about-txt"
+        "projects  projects  projects  projects  projects  projects  projects"
+        "proj1      proj1     proj1     proj2     proj2     proj2     proj2"
+        "proj3      proj3     proj3     proj4     proj4     proj4     proj4"
+        "  xp        xp        xp        xp         xp       xp        xp "
+        "xp1pic    xp1pic      xp1      xp1        xp2       xp2         ."
+        "xp3pic    xp3pic      xp3      xp3        xp3       xp3         ."
+        "footer footer footer footer footer footer footer";
 }
 
 .grid-projects {
     grid-area: projects;
-    background-color: #D20908;
+    background-color: #FF3B3F;
     padding-left: 10%;
 }
 
 .grid-xp {
     grid-area: xp;
-    background-color: #D20908;
+    background-color: #FF3B3F;
     padding-left: 10%;
 }
 
 .proj-gif {
     margin: auto;
-    width: 100%;
+    width: 85%;
     height: 500px;
     background-position: center center;
     background-size: cover;
+    text-align: left;    
+    position: relative;
 }
 
 .project1 {
-    text-align: center;
     grid-area: proj1;
-    background-color: #B7D2E9;
-    color: #D20908;
+    background-color: #EFEFEF;
 }
 .project2 {
     text-align: center;
     grid-area: proj2;
-    background-color: #FFCB95;
+    background-color: #EFEFEF;
 }
 .project3 {
     text-align: center;
     grid-area: proj3;
-    background-color: #FEB0A5;
+    background-color: #EFEFEF;
 }
 .project4 {
     grid-area: proj4;
     text-align: center;
-    background-color: #2F2982;
-    color: #FED646;
-}
-.project4 a {
-    color: #FEB0A5;
+    background-color: #EFEFEF;
 }
 
 .xp1 { 
-    grid-area: xp1; 
-    align-self: center;
+    grid-area: xp1;
+    align-self: top;
+    background-color: rgba(202,235,242, .7);
+    padding: 35px;
+    margin: 50px 25px;
+    
 }
-
+.xp1 p {
+    text-align: justify;
+}
 .xp1pic { 
     grid-area: xp1pic;
     padding-top: 12%;
@@ -183,12 +258,24 @@ body {
 }
 
 .xp2 {
+    padding: 35px;
     grid-area: xp2;
-    align-self: center;
+    align-self: top;
+    margin: 50px 25px;
+    background-color: rgba(202,235,242, .7);
+}
+.xp2 p {
+    text-align: justify;
 }
 .xp3 {
+    padding: 35px;
     grid-area: xp3;
     align-self: center;
     margin-left: 10px;
     margin-right: 10px;
+    background-color: rgba(202,235,242, .7);
+    margin-bottom: 100px;
+}
+.xp3 p {
+    text-align: justify;
 }
