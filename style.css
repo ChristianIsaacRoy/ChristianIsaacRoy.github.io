@@ -1,24 +1,30 @@
 h1 {
     font-size: 80px;
+    color: white;
+    display: inline;
 }
 
 h2 {
     font-family: 'Roboto', sans-serif;    
     color: white;
     font-size: 40px;
-    display: inline;
 }
 
 h3 {
     font-size: 32px;
     display: inline;
     font-weight: 700;
+    color: white;
 }
 
 h4 {
     font-size: 32px;
     font-weight: 700;
-    margin: auto;
+}
+
+p {
+    font-size: 20;
+    font-weight: 700;
 }
 
 body {
@@ -33,12 +39,11 @@ body {
     justify-content: space-between;
     grid-area: header;
     font-family: 'Roboto', sans-serif;
-    background-color: #D20908;    
-    color: white;
+    background-color: #D20908;
 }
 
 .name {
-    margin-left: 12%;
+    margin-left: 10%;
 }
 
 .links {
@@ -50,30 +55,29 @@ body {
     padding-left: 10px;
 }
 
-.grid-header h1 {
-    display: inline;
-}
-
 .about-img {
     grid-area: about-img;
-    background-color: #FEB0A5;
+    background-color: #FFCB95;
     align-self: stretch; 
 }
 
 .about-img img {
-    padding-top: 12.5%;
+    padding-top: 12%;
+    padding-bottom: 12%;
     display: block;
     margin: auto;
-    width: 75%;
+    width: 60%;
 }
 
 .about-txt {
     grid-area: about-txt;
     background-color: #B7D2E9;
+    min-height: 700px;
 }
 
 .about-txt p {
-    padding-top: 20%;
+    padding-top: 22%;
+    padding-bottom: 22%;
     display: block;
     margin: auto;
     width: 75%;
@@ -92,75 +96,78 @@ body {
 .grid-main {
     display: grid;
     align-items: stretch;
-    grid-template-columns: 10% 10% 10% 20% 20% 10% 10% 10%;
-    grid-template-rows: auto 700px auto auto auto auto auto auto auto 100px;
+    grid-template-columns: 20% 10% 20% 20% 10% 20% ;
+    grid-template-rows: auto auto auto auto auto auto  auto auto 100px;
     grid-template-areas: 
-        "header header header header header header header header"
-        ". about-img about-img about-img about-txt about-txt about-txt ."
-        ". projects projects projects projects projects projects ."
-        ". proj1 proj1 proj1 proj2 proj2 proj2 ."
-        ". proj3 proj3 proj3 proj4 proj4 proj4 ."
-        ". xp xp xp xp xp xp ."
-        ". xp1pic xp1pic xp1 xp1 xp1 xp1 ."
-        ". xp2 xp2 xp2 xp2 . . ."
-        ". xp3pic xp3pic xp3 xp3 xp3 xp3 ."
-        "footer footer footer footer footer footer footer footer";
+        "header header header header header header"
+        "about-img about-img about-img about-txt about-txt about-txt"
+        "projects projects projects projects projects projects"
+        "proj1 proj1 proj1 proj2 proj2 proj2"
+        "proj3 proj3 proj3 proj4 proj4 proj4"
+        "xp xp xp xp xp xp "
+        "xp1pic xp1pic xp1 xp2 xp2 ."
+        "xp3pic xp3pic xp3 xp3 xp3 xp3"
+        "footer footer footer footer footer footer";
 }
 
 .grid-projects {
     grid-area: projects;
     background-color: #D20908;
-    text-align: center;
+    padding-left: 10%;
 }
 
 .grid-xp {
     grid-area: xp;
     background-color: #D20908;
-    text-align: center;
+    padding-left: 10%;
 }
 
 .proj-gif {
     margin: auto;
-    width: 98%;
-    height: 400px;
+    width: 100%;
+    height: 500px;
     background-position: center center;
     background-size: cover;
 }
 
 .project1 {
-    padding-top: 20px;
+    text-align: center;
     grid-area: proj1;
     background-color: #B7D2E9;
     color: #D20908;
 }
 .project2 {
-    padding-top: 20px;
+    text-align: center;
     grid-area: proj2;
-    background-color: #FEB0A5;
+    background-color: #FFCB95;
 }
 .project3 {
+    text-align: center;
     grid-area: proj3;
     background-color: #FEB0A5;
 }
 .project4 {
     grid-area: proj4;
-    background-color: #B7D2E9;
-    color: #D20908;
+    text-align: center;
+    background-color: #2F2982;
+    color: #FED646;
+}
+.project4 a {
+    color: #FEB0A5;
 }
 
 .xp1 { 
     grid-area: xp1; 
     align-self: center;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .xp1pic { 
     grid-area: xp1pic;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    width: 100%;
-    height:100%;
+    padding-top: 12%;
+    padding-bottom: 12%;
+    display: block;
+    margin: auto;
+    width: 60%;
 }
 
 .xp3pic { 
@@ -178,10 +185,6 @@ body {
 .xp2 {
     grid-area: xp2;
     align-self: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 .xp3 {
     grid-area: xp3;
