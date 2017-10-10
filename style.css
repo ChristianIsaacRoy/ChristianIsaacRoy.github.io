@@ -31,7 +31,9 @@ p {
 }
 
 body {
-    background-color: #EFEFEF;
+    /* background-color: #EFEFEF; */
+    background-image: url('Images/noise_lines.png');
+    background-repeat: repeat;
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
     padding: 0px;
@@ -60,7 +62,6 @@ body {
 
 .about-img {
     grid-area: about-img;
-    background-color: #EFEFEF;
     align-self: stretch; 
 }
 
@@ -74,8 +75,8 @@ body {
 
 .about-txt {
     grid-area: about-txt;
-    background-color: #EFEFEF;
     min-height: 700px;
+    
 }
 
 .disc {
@@ -85,10 +86,13 @@ body {
     padding: 40px 60px;
     text-align: justify;
 
+    border-top: 6px solid #FF3B3F;
+
     font-size: 32px;
     font-weight: 500;
     line-height: 150%;
-    background-color: rgba(202,235,242, .7);
+    /* background-color: rgba(202,235,242, .7); */
+    
     color: #545454;
 }
 
@@ -99,7 +103,8 @@ body {
     display: table;
     margin: 0 auto;
     color: #545454;
-    background-color: rgba(202,235,242, .7);
+    
+    /*background-color: rgba(202,235,242, .7);*/
 }
 
 .link {
@@ -179,8 +184,8 @@ body {
         "proj1      proj1     proj1     proj2     proj2     proj2     proj2"
         "proj3      proj3     proj3     proj4     proj4     proj4     proj4"
         "  xp        xp        xp        xp         xp       xp        xp "
-        "xp1pic    xp1pic      xp1      xp1        xp2       xp2         ."
         "xp3pic    xp3pic      xp3      xp3        xp3       xp3         ."
+        "xp1pic    xp1pic      xp1      xp1        xp2       xp2         ."
         "footer footer footer footer footer footer footer";
 }
 
@@ -208,30 +213,27 @@ body {
 
 .project1 {
     grid-area: proj1;
-    background-color: #EFEFEF;
+    
 }
 .project2 {
     text-align: center;
     grid-area: proj2;
-    background-color: #EFEFEF;
 }
 .project3 {
     text-align: center;
     grid-area: proj3;
-    background-color: #EFEFEF;
 }
 .project4 {
     grid-area: proj4;
     text-align: center;
-    background-color: #EFEFEF;
 }
 
 .xp1 { 
     grid-area: xp1;
     align-self: top;
-    background-color: rgba(202,235,242, .7);
+    /* background-color: rgba(202,235,242, .7); */
     padding: 35px;
-    margin: 50px 25px;
+    margin: 30px 25px;
     
 }
 .xp1 p {
@@ -262,8 +264,9 @@ body {
     padding: 35px;
     grid-area: xp2;
     align-self: top;
-    margin: 50px 25px;
-    background-color: rgba(202,235,242, .7);
+    margin: 30px 25px;
+    /* background-color: rgba(202,235,242, .7); */
+    /* background-color: #545454; */
 }
 .xp2 p {
     text-align: justify;
@@ -274,8 +277,9 @@ body {
     align-self: center;
     margin-left: 10px;
     margin-right: 10px;
-    background-color: rgba(202,235,242, .7);
-    margin-bottom: 100px;
+    /* background-color: rgba(202,235,242, .7); */
+    /* background-color: #545454; */
+    padding-bottom: 15px;
 }
 .xp3 p {
     text-align: justify;
