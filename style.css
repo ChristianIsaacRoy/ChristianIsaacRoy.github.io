@@ -259,7 +259,6 @@ body {
     color: #545454;
 }
 
-
 .grid-projects {
     grid-area: pb;
     background-color: #FF3B3F;
@@ -355,3 +354,4 @@ body {
 .xp3 p {
     text-align: justify;
 }
+

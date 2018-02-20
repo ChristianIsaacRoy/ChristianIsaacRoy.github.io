@@ -1,0 +1,78 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr) ;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "nb nb nb nb nb nb nb nb nb nb nb nb"
+        ".  ai ai ai ai . am am am am am  ."
+        "pb pb pb pb pb pb pb pb pb pb pb pb"
+        " . p1 p1 p1 p1 p1 p2 p2 p2 p2 p2  ."
+        "p3 p3 p3 p3 p4 p4 p4 p4 p5 p5 p5 p5"
+        "p6 p6 p6 p6 p7 p7 p7 p7 p8 p8 p8 p8"
+        ".  x3 x3 x5 x5 x5 x5 x5 x5 x5 x5  ."
+        "x1 x1 x1 x1 x2 x2 x2 x2 x4 x4 x4  ."
+        "ff ff ff ff ff ff ff ff ff ff ff ff"
+}
+
+.prj1 {
+    grid-area: p1;
+    margin-right: 10%;
+    
+}
+
+.prj2 {
+    grid-area: p2;
+    margin-left: 10%;
+}
+
+.prj3 {
+    grid-area: p3;
+    margin-left: 15%;
+}
+
+.big img {
+    height: 400px;
+}
+
+.smol img {
+    height: 300px;
+}
+
+.prj4 {
+    grid-area: p4;
+    margin: 0px 7.5%;
+}
+
+.prj5 {
+    grid-area: p5;
+    margin-right: 15%;
+}
+
+.prj6 {
+    grid-area: p6;
+    margin-left: 15%;
+}
+
+.prj7 {
+    grid-area: p7;
+    margin: 0px 7.5%;
+}
+
+.prj8 {
+    grid-area: p8;
+    margin-right: 15%;
+}
+
+.abtimg {
+    grid-area: ai;
+    margin: 100px 0px;
+}
+
+.abtme {
+    grid-area: am;
+}
+
+.prjline{
+    grid-area: pb;
+}
+

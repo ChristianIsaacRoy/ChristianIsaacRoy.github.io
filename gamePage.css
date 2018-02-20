@@ -1,0 +1,51 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "nb nb nb nb nb nb nb nb nb nb nb nb"
+        ".  i1 i1 i1 i1 i1 .  d1 d1 d1 d1 ."
+        "i2 i2 i2 i2 i3 i3 i3 i3 i4 i4 i4 i4"
+        "ff ff ff ff ff ff ff ff ff ff ff ff"
+}
+
+.imgtitle .fillimg {
+    height: 300px;
+}
+
+.image1 {
+    grid-area: i1;
+    margin: 100px 0px;
+}
+
+.image2 img {
+    height: 300px;
+}
+
+.image3 img {
+    height: 300px;
+}
+
+.image4 img {
+    height: 300px;
+}
+
+.image2 {
+    grid-area: i2;
+    margin-left: 15%;
+}
+
+.image3 {
+    grid-area: i3;
+    margin: 0px 7.5%;
+}
+
+.image4 {
+    grid-area: i4;
+    margin-right: 15%;
+}
+
+.desc1 {
+    grid-area: d1;   
+}
+
