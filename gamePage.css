@@ -1,3 +1,5 @@
+
+
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -47,5 +49,40 @@
 
 .desc1 {
     grid-area: d1;   
+}
+
+@media only screen 
+  and (max-width: 768px) {
+      .grid{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+        "nb nb nb nb"
+        "i1 i1 i1 i1"
+        "d1 d1 d1 d1"
+        "i2 i2 i2 i2" 
+        "i3 i3 i3 i3" 
+        "i4 i4 i4 i4"
+        "ff ff ff ff"
+      }
+
+      .desc1 {
+          margin: 5%;
+      }
+
+      .image1 {
+          margin: 5%;
+      }
+
+      .image2 {
+        margin: 5%;
+    }
+
+    .image3 {
+        margin: 5%;
+    }
+
+    .image4 {
+        margin: 5%;
+    }
 }
 

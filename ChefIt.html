@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><title>Chef It!</title>
+    <link rel="stylesheet" href="jquery-ui.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="gamePage.css">    
@@ -29,12 +30,14 @@
     <div class="gamedesc desc1">
         <h1>CHEF IT!</h1>
         <div class="desc">
-            <p>Rougelike action adventure game. <br> Made with Unity. <br> Team Size: 4 (1 Engineer) </p>
+            <p>Roguelike action adventure game. <br> Made with Unity. <br> Team Size: 4 (1 Engineer) </p>
             <ul>
-                <li>Complete inventory/equipment system</li>
-                <li>Procedural generation</li>
-                <li>In-depth combat statistics</li>
-                <li>Advanced Random Distribution System</li>
+                <li>Complete inventory/equipment system. Designed with the designer in mind. Easy to add new items, equipment types, damage modifiers.</li>
+                <li>Procedural generation. Each "floor" in the forest is procedurally generated.</li>
+                <li>In-depth combat statistics.</li>
+                <li>Advanced Random Distribution System. This system is built to handle all kinds of cases. Used in the procedural generation for tile types and enemy horde spawns.
+                    Used in loot dropped from enemies. Ability to add loot tables within loot tables and modifiers such as "always drop" and "unique".
+                </li>
             </ul>
             <p> <a href="https://gamejolt.com/games/chefit/305095">Gamejolt Page</a> </p>
         </div>
@@ -45,7 +48,11 @@
         <div class="fillimg">
             <img src="Images/ChefIt2.png">
         </div>
-        <p><a href="https://gist.github.com/ChristianIsaacRoy/5942b8a6f891db3f31f7f3bf9c948ef5">Code Snippet</a></p>
+
+        <div class="snippet">
+            <h3>Code Snippet</h3>
+            <div><script src="https://gist.github.com/ChristianIsaacRoy/5942b8a6f891db3f31f7f3bf9c948ef5.js"></script></div>
+        </div>
     </div>
 
     <div class="imgtitle image3">
@@ -53,7 +60,11 @@
         <div class="fillimg">
             <img src="Images/ChefIt3.png">
         </div>
-        <p><a href="https://gist.github.com/ChristianIsaacRoy/5d7d7cc3bb3b7cb9e283279d06065e57">Code Snippet</a></p>    
+
+        <div class="snippet">
+            <h3>Code Snippet</h3>
+            <div><script src="https://gist.github.com/ChristianIsaacRoy/5d7d7cc3bb3b7cb9e283279d06065e57.js"></script></div>
+        </div>
     </div>
 
     <div class="imgtitle image4">
@@ -61,7 +72,11 @@
         <div class="fillimg">
             <img src="Images/ChefIt4.png">
         </div>
-        <p><a href="https://gist.github.com/ChristianIsaacRoy/c86a746a19298e94fa33156c3dff12cb">Code Snippet</a></p>
+
+        <div class="snippet">
+            <h3>Code Snippet</h3>
+            <div><script src="https://gist.github.com/ChristianIsaacRoy/c86a746a19298e94fa33156c3dff12cb.js"></script></div>
+        </div>
     </div>
 
     <footer class="foot">
@@ -69,7 +84,11 @@
             <a href="https://www.linkedin.com/in/christian-roy/">linkedin</a> <a href="https://twitter.com/sgyffy">twitter</a> <a href="https://www.facebook.com/ChristianRoyUtah">facebook</a><p>christian roy &copy; 2017</p>
         </pre>
     </footer>
-
 </div>
+
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script src="scripts.js"></script>
+
 </body>
 </html>

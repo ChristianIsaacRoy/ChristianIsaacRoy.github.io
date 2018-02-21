@@ -23,7 +23,7 @@ body {
     object-fit: cover;
 }
 
-.imgtitle {
+.imgtitle > p {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
@@ -35,6 +35,20 @@ body {
     text-decoration: none;
     color: #FF3B3F;
 }
+
+/*#region snippet*/
+.snippet > div {
+    margin: 0px;
+    padding: 0px;
+}
+
+.snippet > h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #FF3B3F;
+}
+/*#endregion*/
 
 /*#region hvrimg*/
 .hvrimg {
@@ -89,7 +103,7 @@ body {
     line-height: 150%;
 
     font-family: 'Montserrat', sans-serif;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 500;
     color: #545454;
 }
@@ -98,7 +112,7 @@ body {
     margin: 15px 0px;
 
     font-family: 'Montserrat', sans-serif;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 500;
     color: #545454;
 }
