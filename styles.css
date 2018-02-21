@@ -31,11 +31,6 @@ body {
     color: #545454;
 }
 
-.imgtitle a {
-    text-decoration: none;
-    color: #FF3B3F;
-}
-
 /*#region snippet*/
 .snippet > div {
     margin: 0px;
@@ -55,18 +50,15 @@ body {
     background-color: #FF3B3F;
 }
 
-.hvrimg a {
-    text-decoration: none;
-}
-
-.hvrimg p {
+.hvrimg > p {
     color: #545454;
+    font-size: 32px;
     position: absolute;
     padding-bottom: 75px;
     z-index: 1;
 }
 
-.hvrimg img {
+.hvrimg > img {
     border: 0;
     transition: opacity 1s;
     -moz-transition: opacity 1s; /* Firefox 4 */
@@ -75,7 +67,7 @@ body {
     z-index: 3;
 }
 
-.hvrimg img:hover {
+.hvrimg > img:hover {
     opacity: 0;
 }
 /*#endregion*/
