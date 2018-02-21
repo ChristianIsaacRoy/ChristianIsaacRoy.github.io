@@ -81,10 +81,6 @@ body {
 /*#endregion*/
 
 /*#region gamedesc*/
-.gamedesc {
-    margin: 50px 0px;
-}
-
 .gamedesc .desc {
     border-top: 6px solid #FF3B3F;
     border-bottom: 6px solid #FF3B3F;
@@ -124,7 +120,7 @@ body {
 }
 /*#endregion*/
 
-/*#region navbar */
+/*#region navbar */ 
 .navbar {
     grid-area: nb;
     font-family: 'Roboto', sans-serif;

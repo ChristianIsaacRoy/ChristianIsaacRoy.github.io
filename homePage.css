@@ -14,6 +14,23 @@
         "ff ff ff ff ff ff ff ff ff ff ff ff"
 }
 
+.abtimg {
+    grid-area: ai;
+    margin: 100px auto;
+}
+
+.gamedesc {
+    margin: auto auto;
+}
+
+.gamedesc .desc {
+    margin: 100px auto;
+}
+
+.gamedesc p {
+    margin: 5% 5%;
+}
+
 .prj1 {
     grid-area: p1;
     margin-right: 10%;
@@ -61,11 +78,6 @@
 .prj8 {
     grid-area: p8;
     margin-right: 15%;
-}
-
-.abtimg {
-    grid-area: ai;
-    margin: 100px 0px;
 }
 
 .abtme {
