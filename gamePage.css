@@ -33,16 +33,19 @@
 .image2 {
     grid-area: i2;
     margin-left: 15%;
+    margin-bottom: 25px;
 }
 
 .image3 {
     grid-area: i3;
     margin: 0px 7.5%;
+    margin-bottom: 25px;
 }
 
 .image4 {
     grid-area: i4;
     margin-right: 15%;
+    margin-bottom: 25px;
 }
 
 .desc1 {
@@ -71,7 +74,7 @@
     }
 
     .image2 {
-    margin: 5%;
+        margin: 5%;
     }
 
     .image3 {
