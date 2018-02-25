@@ -53,6 +53,7 @@ body {
 .hvrimg > p {
     color: #545454;
     font-size: 32px;
+    text-align: center;
     position: absolute;
     padding-bottom: 75px;
     z-index: 1;
