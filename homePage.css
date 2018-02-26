@@ -95,24 +95,27 @@
 }
 
 .xp1pic {
+    margin-top: 50px;
     grid-area: xp1;
 }
 
 .xp1desc {
     grid-area: xd1;
     padding-left: 75px;
-    margin-bottom: 75px;
+    margin-top: 50px;
+    margin-bottom: 125px;
 }
 
 .xp2desc {
     grid-area: xd2;
     padding-left: 75px;
-    margin-bottom: 75px;
+    margin-top: 50px;
+    margin-bottom: 125px;
 }
 
 .xp3pic {
     grid-area: xp3;
-    margin: 50px auto;
+    margin: 25px auto;
 }
 
 .xp3desc {
