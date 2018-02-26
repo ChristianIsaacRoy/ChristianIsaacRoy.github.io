@@ -51,6 +51,8 @@ body {
 }
 
 .hvrimg > p {
+    height: inherit;
+    object-fit: cover;
     color: #545454;
     font-size: 32px;
     text-align: center;
