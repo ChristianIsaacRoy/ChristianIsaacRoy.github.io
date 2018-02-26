@@ -5,6 +5,7 @@
     grid-template-areas:
         "nb nb nb nb nb nb nb nb nb nb nb nb"
         ".  i1 i1 i1 i1 i1 .  d1 d1 d1 d1 ."
+        ".  d2 d2 d2 d2 d2  d3  d3 d3 d3 d3 ."
         "ff ff ff ff ff ff ff ff ff ff ff ff"
 }
 
@@ -51,6 +52,16 @@
     grid-area: d1;   
 }
 
+.desc2 {
+    grid-area: d2;
+    margin-bottom: 75px;
+}
+
+.desc3 {
+    grid-area: d3;
+    margin-bottom: 75px;
+}
+
 @media only screen and (max-width: 768px) {
     .grid{
         grid-template-columns: repeat(4, 1fr);
@@ -58,6 +69,8 @@
         "nb nb nb nb"
         "i1 i1 i1 i1"
         "d1 d1 d1 d1"
+        "d2 d2 d2 d2"
+        "d3 d3 d3 d3"
         "ff ff ff ff"
     }
 

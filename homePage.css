@@ -89,6 +89,8 @@
 }
 
 .xpline{
+    margin-top: 50px;
+    margin-bottom: 50px;
     grid-area: xb;
 }
 
