@@ -159,7 +159,14 @@ body {
 .navbar .links {
     float: right;
     margin: 25px 0px;
+    font-family: 'Courgette', cursive;
 }
+
+.navbar .links p {
+    text-align: center;
+    margin: 0;
+}
+
 .navbar .links a {
     padding-right: 10px;
     padding-left: 10px;
