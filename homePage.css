@@ -10,9 +10,9 @@
         "p3 p3 p3 p3 p4 p4 p4 p4 p5 p5 p5 p5"
         "p6 p6 p6 p6 p7 p7 p7 p7 p8 p8 p8 p8"
         "xb xb xb xb xb xb xb xb xb xb xb xb"
-        ". xp3 xp3 xp3 xp3 xd3 xd3 xd3 xd3 xd3 xd3 ."
-        ". xp1 xp1 xp1 xp1 xd2 xd2 xd2 xd1 xd1 xd1 ."
-        ". xp1 xp1 xp1 xp1 xd2 xd2 xd2 xd1 xd1 xd1 ."
+        ".  . xp3 xp3 xd3 xd3 xd3 xd3 xd3 xd3 xd3 ."
+        ".  . xp1 xp1 xd2 xd2 xd2 xd1 xd1 xd1 xd1 ."
+        ".  . xp1 xp1 xd2 xd2 xd2 xd1 xd1 xd1 xd1 ."
         "ff ff ff ff ff ff ff ff ff ff ff ff"
 }
 
@@ -95,7 +95,7 @@
 }
 
 .xp1pic {
-    margin-top: 50px;
+    margin: auto;
     grid-area: xp1;
 }
 
@@ -116,6 +116,12 @@
 .xp3pic {
     grid-area: xp3;
     margin: 25px auto;
+    height: 100%;
+}
+
+.xp3pic img {
+    height: 60%;
+    width: 60%
 }
 
 .xp3desc {
