@@ -4,7 +4,7 @@
     grid-template-rows: auto;
     grid-template-areas: 
         "nb nb nb nb nb nb nb nb nb nb nb nb"
-        ".  ai ai ai ai . am am am am am  ."
+        ".  .  ai ai ai .  am am am am am  ."
         "pb pb pb pb pb pb pb pb pb pb pb pb"
         " . p1 p1 p1 p1 p1 p2 p2 p2 p2 p2  ."
         "p3 p3 p3 p3 p4 p4 p4 p4 p5 p5 p5 p5"
@@ -18,7 +18,7 @@
 
 .abtimg {
     grid-area: ai;
-    margin: 100px auto;
+    margin: auto auto;
 }
 
 .gamedesc {
