@@ -172,12 +172,18 @@
             "p7 p7 p7 p7"
             "p8 p8 p8 p8"
             "xb xb xb xb"
+            ". xp4 xp4 ."
+            "xd4 xd4 xd4 xd4"
             ". xp3 xp3 ."
             "xd3 xd3 xd3 xd3"
             ". xp1 xp1 ."
             "xd1 xd1 xd1 xd1"
             "xd2 xd2 xd2 xd2"
             "ff ff ff ff"
+    }
+
+    .xp4pic {
+        margin: 25px auto;
     }
 
     .xp1pic {
@@ -247,6 +253,11 @@
     }
 
     .xp3desc {
+        margin: 0px 10%;
+        padding: 0;
+    }
+
+    .xp4desc {
         margin: 0px 10%;
         padding: 0;
     }
